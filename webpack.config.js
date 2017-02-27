@@ -14,7 +14,7 @@ let plugins = [
   new ExtractTextPlugin(`[name].css`),
 ];
 if (!isDev) {
-  plugins.push( new webpack.optimize.UglifyJsPlugin({
+  plugins.push(new webpack.optimize.UglifyJsPlugin({
     minimize: !isDev,
     compress: {
       warnings: false
@@ -31,14 +31,15 @@ module.exports = {
     filename: `[name].js`,
   },
   module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      loader: 'babel-loader',
-      query: {
-        presets: ['es2015', 'stage-0', 'react'],
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015', 'stage-0', 'react'],
+        },
+        exclude: /.*node_modules((?!localModule).)*$/,
       },
-      exclude: /.*node_modules((?!localModule).)*$/,
-    },
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader', 'postcss-loader'),
@@ -59,7 +60,7 @@ module.exports = {
         ],
       }],
   },
-  postcss: [autoprefixer({ browsers: ['ie > 9', 'last 2 versions'] })],
+  postcss: [autoprefixer({browsers: ['ie > 9', 'last 2 versions']})],
   plugins,
   resolve: {
     extensions: ['', '.js', 'jsx', 'less'],

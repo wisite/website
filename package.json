@@ -36,8 +36,8 @@
     "autoprefixer": "^6.5.0",
     "classnames": "^2.2.5",
     "extract-text-webpack-plugin": "^1.0.1",
-    "ws-footer": "0.0.1",
-    "ws-nav": "0.0.1",
-    "ws-slider": "0.0.1"
+    "ws-footer": "0.0.3",
+    "ws-nav": "0.0.2",
+    "ws-slider": "0.0.3"
   }
 }
