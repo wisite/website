@@ -1,6 +1,9 @@
 import Nav from 'ws-nav';
 import Slider from 'ws-slider';
 import Footer from 'ws-footer';
+import 'ws-slider/assets/index.less';
+import 'ws-footer/assets/index.less';
+import 'ws-nav/assets/index.less';
 import './common.less';
 import './index.less'
 import Section from './Section';
