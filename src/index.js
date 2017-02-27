@@ -22,8 +22,8 @@ class Page extends React.Component{
         href: '#ws-example'
       },
       {
-        name: '购买咨询',
-        href: '#advisory'
+        name: '挑选规格',
+        href: '#ws-price'
       },
       {
         name: '联系我们',
@@ -114,6 +114,45 @@ class Page extends React.Component{
               </p>
               <a href="#">xxx官网</a>
               <p className="ws-badge-desc">最有范的设计，最前沿的技术，提供最优质的服务，领先行业最高质量</p>
+            </div>
+          </div>
+        </Section>
+        <Section id="ws-price" className="ws-section-price">
+          <div className="ws-section-card">
+            <div className="ws-section-card-title">
+              <i className="iconfont icon-yin silver-color" />
+              <h2>标准版</h2>
+              <p>¥1000起</p>
+            </div>
+            <div className="ws-section-card-body">
+              <p>高端大气有档次<i className="iconfont icon-gou" /></p>
+              <p>访问速度快<i className="iconfont icon-gou" /></p>
+              <p>免费服务器托管<i className="iconfont icon-gou" /></p>
+              <p>免费注册域名<i className="iconfont icon-gou" /></p>
+              <p>无需备案<i className="iconfont icon-gou" /></p>
+              <p>简单SEO优化<i className="iconfont icon-gou" /></p>
+              <p>一年免费维护<i className="iconfont icon-gou" /></p>
+              <p>24小时咨询服务<i className="iconfont icon-gou" /></p>
+              <p>一条龙建站<i className="iconfont icon-gou" /></p>
+            </div>
+          </div>
+          <div className="ws-section-card price-high">
+            <div className="ws-section-card-title">
+              <i className="iconfont icon-yin gold-color" />
+              <h2>豪华版</h2>
+              <p>¥2000起</p>
+            </div>
+            <div className="ws-section-card-body">
+              <p>超级震撼特效<i className="iconfont icon-gou" /></p>
+              <p>访问速度超快<i className="iconfont icon-gou" /></p>
+              <p>免费服务器托管<i className="iconfont icon-gou" /></p>
+              <p>免费注册域名<i className="iconfont icon-gou" /></p>
+              <p>无需备案<i className="iconfont icon-gou" /></p>
+              <p>深度SEO优化<i className="iconfont icon-gou" /></p>
+              <p>一年免费维护<i className="iconfont icon-gou" /></p>
+              <p>24小时咨询服务<i className="iconfont icon-gou" /></p>
+              <p>一条龙建站<i className="iconfont icon-gou" /></p>
+              <p>手机网站完美支持<i className="iconfont icon-gou" /></p>
             </div>
           </div>
         </Section>

@@ -1,4 +1,4 @@
-@import "//at.alicdn.com/t/font_kutc5wnefpta9k9.css";
+@import "//at.alicdn.com/t/font_sfx0xli4v6b9be29.css";
 .ws-page {
 	.ws-header {
 		background: #34495e;
@@ -247,6 +247,83 @@
 				font-size: 0.8em;
 				color: #666;
 				margin-top: 1em;
+			}
+		}
+	}
+
+	.ws-section-price {
+		flex-direction: row;
+		flex-wrap: wrap;
+		.ws-section-card {
+			display: flex;
+			flex-basis: 30%;
+			margin: 2em 4%;
+			min-width: 300px;
+			flex-direction: column;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 20px #ddd;
+			overflow: hidden;
+			transition: 0.3s;
+			background: white;
+			&:hover {
+				box-shadow: 0 0 20px #cbcbcb;
+			}
+			&.price-high {
+				border: 1px solid #00c1de;
+				box-shadow: 0 0 20px rgba(0, 198, 226, 0.5);
+				&:hover {
+					box-shadow: 0 0 25px rgba(0, 198, 226, 0.8);
+				}
+				.ws-section-card-title {
+					background: #00c1de;
+					color: white;
+				}
+			}
+			.ws-section-card-title {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				background: #ebebec;
+				padding: 2em 0;
+				i {
+					font-size: 3em;
+					&.silver-color {
+						color: #999;
+					}
+					&.gold-color {
+						color: #ffcf00;
+					}
+				}
+				h2 {
+					line-height: 3em;
+					height: 3em;
+					font-weight: bold;
+					font-size: 1.2em;
+				}
+				p {
+					color: #d7564b;
+				}
+			}
+			.ws-section-card-body {
+				background: white;
+				padding: 2em 0;
+				p {
+					line-height: 3em;
+					height: 3em;
+					padding: 0 2em;
+					font-size: 0.9em;
+					transition: 0.5s;
+					&:hover {
+						background: #efefef;
+					}
+					i {
+						float: right;
+						color: rgb(37, 156, 85);
+					}
+				}
+
 			}
 		}
 	}
