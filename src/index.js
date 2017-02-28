@@ -48,7 +48,7 @@ class Page extends React.Component{
         <Nav company={company} items={items} />
         <Slider className="ws-banner">
           <SliderBlock>
-            <div className="neo-slider-1">
+            <div className="neo-slider-block">
               <img src="images/banner.jpg" />
               <div className="neo-banner-info">
                 <h2>专业／铸就一流品质</h2>
@@ -59,27 +59,31 @@ class Page extends React.Component{
             </div>
           </SliderBlock>
           <SliderBlock>
-            <div style={{...tempCommon, background: 'blue'}}>222</div>
-          </SliderBlock>
-          <SliderBlock>
-            <div style={{...tempCommon, background: 'green'}}>333</div>
+            <div className="neo-slider-block neo-slider-2">
+              <img src="images/banner2.jpg" />
+              <div className="neo-banner-info">
+                <h2>轻松建站&nbsp;&nbsp;一流标准</h2>
+                <h2>提供高质量建站服务</h2>
+                <a href="#ws-contact">联系我们</a>
+              </div>
+            </div>
           </SliderBlock>
         </Slider>
         <Section className="ws-section-badges">
           <div className="ws-section-badge ws-badge-baohu">
             <p className="ws-badge-bg"><i className="iconfont icon-baohu" /></p>
-            <a>优质保障</a>
-            <p className="ws-badge-desc">最有范的设计，最前沿的技术，提供最优质的服务，领先行业最高质量</p>
+            <a>品质保障</a>
+            <p className="ws-badge-desc">工程师全年维护，定期检查，保障网站稳定安全运行</p>
           </div>
           <div className="ws-section-badge ws-badge-zhuanye">
             <p className="ws-badge-bg"><i className="iconfont icon-diyi" /></p>
-            <a>专业品质</a>
-            <p className="ws-badge-desc">最专业的人做最专业的事，是您将精力放在您的领域，网站交给我们</p>
+            <a>专业团队</a>
+            <p className="ws-badge-desc">五年以上行业经验，世界五百强企业全栈工程师，协同开发</p>
           </div>
           <div className="ws-section-badge ws-badge-chengxin">
-            <p className="ws-badge-bg"><i className="iconfont icon-diyi" /></p>
-            <a>专业品质</a>
-            <p className="ws-badge-desc">最专业的人做最专业的事，是您将精力放在您的领域，网站交给我们</p>
+            <p className="ws-badge-bg"><i className="iconfont icon-qianyan" /></p>
+            <a>领先技术</a>
+            <p className="ws-badge-desc">高端建站，使用国际前沿技术，支持高并发，超快访问速度</p>
           </div>
         </Section>
         <Section id="ws-about">
@@ -96,24 +100,24 @@ class Page extends React.Component{
             <h2>成功案例<span>EXAMPLES</span></h2>
             <div className="ws-section-badge">
               <p className="ws-badge-bg">
-                <img src="images/banner.jpg" />
+                <img src="images/example1.jpg" />
               </p>
-              <a href="#">xxx官网</a>
-              <p className="ws-badge-desc">最有范的设计，最前沿的技术，提供最优质的服务，领先行业最高质量</p>
+              <a href="//www.vincross.com/">Vincross官网</a>
+              <p className="ws-badge-desc">最有范的设计，最前沿的技术</p>
             </div>
             <div className="ws-section-badge">
               <p className="ws-badge-bg">
-                <img src="images/banner.jpg" />
+                <img src="images/example2.jpg" />
               </p>
-              <a href="#">xxx官网</a>
-              <p className="ws-badge-desc">最有范的设计，最前沿的技术，提供最优质的服务，领先行业最高质量</p>
+              <a href="//www.gumpcome.com/">甘来智能微超</a>
+              <p className="ws-badge-desc">物美价廉，品质保证，初创公司的选择</p>
             </div>
             <div className="ws-section-badge">
               <p className="ws-badge-bg">
-                <img src="images/banner.jpg" />
+                <img src="images/example3.jpg" />
               </p>
-              <a href="#">xxx官网</a>
-              <p className="ws-badge-desc">最有范的设计，最前沿的技术，提供最优质的服务，领先行业最高质量</p>
+              <a href="//www.xihumaker.com/">西湖创客汇</a>
+              <p className="ws-badge-desc">从域名到服务器，一条龙服务，尽心为您服务</p>
             </div>
           </div>
         </Section>
@@ -168,7 +172,7 @@ class Page extends React.Component{
               <div className="ws-section-contact-box">
                 <i className="iconfont icon-tel" />
                 <h4>联系电话</h4>
-                <p>周先生：18801912325</p>
+                <p>周先生：188-0191-2325</p>
               </div>
               <div className="ws-section-contact-box">
                 <i className="iconfont icon-wechat" />
