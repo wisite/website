@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive -t 5000 --compilers js:babel-core/register",
-    "start": "node ./dist/server.js",
+    "start": "node ./dist/server.js --name website",
     "eslint": "./node_modules/.bin/eslint src/;exit 0"
   },
   "author": "zhouyong",
