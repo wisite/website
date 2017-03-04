@@ -1,6 +1,7 @@
 /**
  * Created by ssehacker on 2017/2/26.
  */
+import React from 'react';
 import classnames from 'classnames';
 
 class Section extends React.Component {

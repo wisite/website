@@ -1,11 +1,7 @@
+import React from 'react';
 import Nav from 'ws-nav';
 import Slider from 'ws-slider';
 import Footer from 'ws-footer';
-import 'ws-slider/assets/index.less';
-import 'ws-footer/assets/index.less';
-import 'ws-nav/assets/index.less';
-import './common.less';
-import './index.less'
 import Section from './Section';
 
 const { SliderBlock } = Slider;
@@ -182,12 +178,10 @@ class Page extends React.Component{
             </div>
           </div>
         </Section>
-        <Footer>
-
-        </Footer>
+        <Footer/>
       </div>
     );
   }
 }
 
-ReactDOM.render(<Page /> , document.querySelector('#app'));
+export default Page;
